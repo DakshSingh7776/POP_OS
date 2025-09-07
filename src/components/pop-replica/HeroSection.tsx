@@ -1,38 +1,88 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Download } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="relative w-full min-h-[calc(100vh-5rem)] flex items-center">
+    <section className="relative w-full bg-[#1e2a4a] text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://picsum.photos/1920/1200"
-          alt="Pop!_OS Desktop"
-          data-ai-hint="desktop interface"
+          src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=2071&auto=format&fit=crop"
+          alt="Starry space background"
+          data-ai-hint="starry space"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
+        <div className="absolute inset-0 bg-black opacity-40"></div>
       </div>
-      <div className="relative z-10 container px-4 md:px-6">
-        <div className="max-w-xl text-left">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-headline tracking-tighter text-foreground mb-4">
-            For a fast, open source OS
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-            Pop!_OS is an operating system for STEM and creative professionals who use their computer as a tool to discover and create.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="text-lg py-7 px-8">
-              <Download className="mr-2 h-5 w-5" />
-              Download Pop!_OS
-            </Button>
-            <Button size="lg" variant="secondary" className="text-lg py-7 px-8">
-              Learn More
-            </Button>
+      
+      <div className="relative z-10">
+        <div className="container mx-auto px-4 py-20 md:py-32">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="text-center md:text-left">
+              <h1 className="text-5xl md:text-6xl font-bold font-headline mb-4">
+                Welcome to Pop!_OS
+              </h1>
+              <p className="text-lg md:text-xl text-gray-200 max-w-lg mx-auto md:mx-0">
+                Unleash your potential on Pop!_OS: an operating system for STEM and creative professionals.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center md:justify-start">
+                <Button size="lg" className="bg-[#46d1c8] hover:bg-[#3bc4bb] text-[#0b3c48] font-bold text-sm py-3 px-8 rounded-none uppercase tracking-wider">
+                  Download
+                </Button>
+                <Button size="lg" variant="secondary" className="bg-[#fdb813] hover:bg-[#e9a802] text-[#634310] font-bold text-sm py-3 px-8 rounded-none uppercase tracking-wider">
+                  Donate to Pop
+                </Button>
+              </div>
+            </div>
+            <div className="relative h-64 md:h-96 flex items-center justify-center">
+              <div className="absolute">
+                  <Image
+                      src="https://images.unsplash.com/photo-1542628634-846564612739?w=800"
+                      alt="Rocket in space"
+                      data-ai-hint="rocket space"
+                      width={300}
+                      height={300}
+                      className="object-contain"
+                  />
+              </div>
+              <div className="absolute -left-20 top-0">
+                  <Image
+                    src="https://images.unsplash.com/photo-1567409385055-6cb53b34e2f4?w=400"
+                    alt="Yellow planet"
+                    data-ai-hint="yellow planet"
+                    width={100}
+                    height={100}
+                    className="object-contain rounded-full border-4 border-[#a2d8f5]"
+                   />
+              </div>
+               <div className="absolute right-10 top-10">
+                  <Image
+                    src="https://images.unsplash.com/photo-1567409385055-6cb53b34e2f4?w=400"
+                    alt="Orange planet"
+                    data-ai-hint="orange planet"
+                    width={120}
+                    height={120}
+                    className="object-contain rounded-full border-4 border-[#a2d8f5]"
+                   />
+              </div>
+               <div className="absolute right-40 top-0">
+                  <Image
+                    src="https://images.unsplash.com/photo-1567409385055-6cb53b34e2f4?w=400"
+                    alt="Small planet"
+                    data-ai-hint="small planet"
+                    width={40}
+                    height={40}
+                    className="object-contain rounded-full border-2 border-[#a2d8f5]"
+                   />
+              </div>
+            </div>
           </div>
+        </div>
+        <div className="w-full h-32 md:h-48">
+          <svg viewBox="0 0 100 20" preserveAspectRatio="none" className="w-full h-full text-[#c95a43]">
+            <path d="M0,20 L100,20 L100,10 C 80,15, 60,0, 40,5 C 20,10, 10,20, 0,20 z" fill="currentColor"/>
+          </svg>
         </div>
       </div>
     </section>

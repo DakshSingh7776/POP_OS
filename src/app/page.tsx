@@ -1,8 +1,6 @@
 import { Header } from '@/components/pop-replica/Header';
 import { HeroSection } from '@/components/pop-replica/HeroSection';
-import { FeatureShowcase } from '@/components/pop-replica/FeatureShowcase';
-import { CustomizationSection } from '@/components/pop-replica/CustomizationSection';
-import { DownloadSection } from '@/components/pop-replica/DownloadSection';
+import { EvolvingSection } from '@/components/pop-replica/EvolvingSection';
 import { Footer } from '@/components/pop-replica/Footer';
 
 export default function Home() {
@@ -11,9 +9,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
-        <FeatureShowcase />
-        <CustomizationSection />
-        <DownloadSection />
+        <EvolvingSection />
       </main>
       <Footer />
     </div>

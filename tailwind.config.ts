@@ -10,9 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Fira Sans', 'sans-serif'],
-        headline: ['Poppins', 'sans-serif'],
-        code: ['monospace'],
+        body: ['Lato', 'sans-serif'],
+        headline: ['"Fira Sans"', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -54,16 +53,6 @@ export default {
           '3': 'hsl(var(--chart-3))',
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
-        },
-        sidebar: {
-          DEFAULT: 'hsl(var(--sidebar-background))',
-          foreground: 'hsl(var(--sidebar-foreground))',
-          primary: 'hsl(var(--sidebar-primary))',
-          'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-          accent: 'hsl(var(--sidebar-accent))',
-          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-          border: 'hsl(var(--sidebar-border))',
-          ring: 'hsl(var(--sidebar-ring))',
         },
       },
       borderRadius: {

@@ -10,37 +10,49 @@ export function DownloadSection() {
             Download Pop!_OS
           </h2>
           <p className="max-w-[600px] text-muted-foreground md:text-xl">
-            Choose the version that's right for your hardware. All downloads are free and open source.
+            Pop!_OS is free and open source.
           </p>
         </div>
-        <div className="mx-auto mt-10 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2">
+        <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col items-center justify-between rounded-lg border p-6 text-center shadow-sm">
             <div className="space-y-2">
               <h3 className="text-2xl font-bold font-headline">Pop!_OS 22.04 LTS</h3>
               <p className="text-muted-foreground">
-                Long-term support release for maximum stability.
+                For most computers
               </p>
             </div>
             <Button size="lg" className="mt-6 w-full">
               <Download className="mr-2 h-5 w-5" />
-              Download LTS
+              Download
             </Button>
           </div>
           <div className="flex flex-col items-center justify-between rounded-lg border p-6 text-center shadow-sm">
             <div className="space-y-2">
-              <h3 className="text-2xl font-bold font-headline">Pop!_OS 22.04 LTS (NVIDIA)</h3>
+              <h3 className="text-2xl font-bold font-headline">NVIDIA</h3>
               <p className="text-muted-foreground">
-                Includes the proprietary NVIDIA driver.
+                For computers with NVIDIA graphics
+              </p>
+            </div>
+            <Button size="lg" variant="secondary" className="mt-6 w-full bg-primary text-primary-foreground hover:bg-primary/90">
+              <Download className="mr-2 h-5 w-5" />
+              Download (NVIDIA)
+            </Button>
+          </div>
+          <div className="flex flex-col items-center justify-between rounded-lg border p-6 text-center shadow-sm lg:col-span-1 sm:col-span-2">
+            <div className="space-y-2">
+              <h3 className="text-2xl font-bold font-headline">Raspberry Pi 4</h3>
+              <p className="text-muted-foreground">
+                For the Raspberry Pi 4
               </p>
             </div>
             <Button size="lg" variant="secondary" className="mt-6 w-full">
               <Download className="mr-2 h-5 w-5" />
-              Download for NVIDIA
+              Download (RAS PI)
             </Button>
           </div>
         </div>
         <div className="mt-8 text-center text-sm text-muted-foreground">
-            <p>Need help? Check out our <a href="#" className="underline hover:text-primary">installation guide</a>.</p>
+            <p>Need help? Check out our <a href="#" className="underline hover:text-primary">installation guide</a> or see how to <a href="#" className="underline hover:text-primary"> upgrade Pop!_OS</a>.</p>
         </div>
       </div>
     </section>

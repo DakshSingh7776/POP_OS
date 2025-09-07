@@ -25,9 +25,9 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   
   const navLinks = [
-    { href: "#", label: "Features" },
-    { href: "#", label: "Community" },
-    { href: "#", label: "Support" },
+    { href: "#features", label: "Features" },
+    { href: "#community", label: "Community" },
+    { href: "#support", label: "Support" },
     { href: "https://system76.com/", label: "System76" },
   ];
 
@@ -66,7 +66,7 @@ export function Header() {
               <nav className="flex flex-col gap-4 p-4">
                 {navLinks.map((link) => (
                   <Link
-                    key={link.href}
+                    key={`${link.href}-${link.label}`}
                     href={link.href}
                     className="text-lg font-medium text-foreground/80 hover:text-foreground transition-colors"
                     onClick={() => setIsMenuOpen(false)}
@@ -89,7 +89,7 @@ export function Header() {
           <nav className="flex gap-6">
             {navLinks.map((link) => (
               <Link
-                key={link.href}
+                key={`${link.href}-${link.label}`}
                 href={link.href}
                 className="text-lg font-medium text-muted-foreground transition-colors hover:text-primary"
               >

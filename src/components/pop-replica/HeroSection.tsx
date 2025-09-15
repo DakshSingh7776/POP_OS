@@ -38,7 +38,7 @@ export function HeroSection() {
             <div className="relative h-64 md:h-96 flex items-center justify-center">
               <div className="absolute -left-20 top-0">
                 <Image
-                    src="https://picsum.photos/seed/planet1/100/100"
+                    src="/yellow-planet.png"
                     alt="Yellow planet"
                     data-ai-hint="yellow planet"
                     width={100}
@@ -48,7 +48,7 @@ export function HeroSection() {
               </div>
               <div className="absolute right-10 top-10">
                   <Image
-                      src="https://picsum.photos/seed/planet2/120/120"
+                      src="/orange-planet.png"
                       alt="Orange planet"
                       data-ai-hint="orange planet"
                       width={120}

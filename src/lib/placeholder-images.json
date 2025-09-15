@@ -50,5 +50,17 @@
     "slack": {
         "src": "https://picsum.photos/seed/slack/80/80",
         "hint": "slack logo"
+    },
+    "dev": {
+        "src": "https://picsum.photos/seed/dev/600/400",
+        "hint": "development environment"
+    },
+    "media": {
+        "src": "https://picsum.photos/seed/media/600/400",
+        "hint": "video editor"
+    },
+    "gaming": {
+        "src": "https://picsum.photos/seed/gaming/600/400",
+        "hint": "video game"
     }
 }

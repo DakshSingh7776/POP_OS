@@ -63,7 +63,7 @@ export function FeatureShowcase() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
             <div className="grid grid-cols-5 gap-4">
                 {appIcons.map((icon) => (
                     <div key={icon.name} className="flex justify-center items-center p-2">
@@ -81,8 +81,68 @@ export function FeatureShowcase() {
             <div>
                 <h3 className="text-3xl font-headline text-gray-800 mb-4">Compatibility</h3>
                 <p className="text-gray-600 leading-relaxed">
-                Develop software out of the box with a vast array of libraries and tools at your disposal. Pop!_OS uses APT and Flatpak package management, meaning it's easy to install, remove, and update all software on the OS.
+                  Pop!_OS is pre-installed with a vast array of libraries and tools for your projects. Use what you want; we’ll get out of your way. Pop!_OS uses APT and Flatpak package management.
                 </p>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
+          <div>
+            <h3 className="text-3xl font-headline text-gray-800 mb-4">Software Development</h3>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              A smoothly operating system and a clean desktop free of distractions give you a focused environment to develop your next big idea.
+            </p>
+            <Link href="#" className="font-bold text-gray-500 hover:text-gray-900 transition-colors tracking-wider text-sm">
+              LEARN MORE &gt;
+            </Link>
+          </div>
+          <div className="relative h-96">
+            <Image
+              src={placeholderImages.dev.src}
+              alt="Software development environment"
+              fill
+              data-ai-hint={placeholderImages.dev.hint}
+              className="rounded-lg shadow-2xl object-cover"
+            />
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
+          <div className="relative h-96">
+            <Image
+              src={placeholderImages.media.src}
+              alt="Media production software"
+              fill
+              data-ai-hint={placeholderImages.media.hint}
+              className="rounded-lg shadow-2xl object-cover"
+            />
+          </div>
+          <div>
+            <h3 className="text-3xl font-headline text-gray-800 mb-4">Media Production</h3>
+            <p className="text-gray-600 leading-relaxed">
+              When your muse takes over, your OS needs to provide a frictionless experience. Pop!_OS helps you get in the zone and stay there.
+            </p>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h3 className="text-3xl font-headline text-gray-800 mb-4">Gaming</h3>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Pop!_OS provides a stellar gaming experience with its built-in NVIDIA drivers and Game-Ready drivers available for download in the Pop!_Shop.
+            </p>
+            <Link href="#" className="font-bold text-gray-500 hover:text-gray-900 transition-colors tracking-wider text-sm">
+              LEARN MORE &gt;
+            </Link>
+          </div>
+          <div className="relative h-96">
+            <Image
+              src={placeholderImages.gaming.src}
+              alt="Gaming on Pop!_OS"
+              fill
+              data-ai-hint={placeholderImages.gaming.hint}
+              className="rounded-lg shadow-2xl object-cover"
+            />
           </div>
         </div>
 

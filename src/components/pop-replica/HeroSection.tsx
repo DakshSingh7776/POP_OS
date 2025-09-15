@@ -36,46 +36,7 @@ export function HeroSection() {
               </div>
             </div>
             <div className="relative h-64 md:h-96 flex items-center justify-center">
-              <div className="absolute">
-                  <Image
-                      src="https://images.unsplash.com/photo-1542628634-846564612739?w=800"
-                      alt="Rocket in space"
-                      data-ai-hint="rocket space"
-                      width={300}
-                      height={300}
-                      className="object-contain"
-                  />
-              </div>
-              <div className="absolute -left-20 top-0">
-                  <Image
-                    src="https://images.unsplash.com/photo-1567409385055-6cb53b34e2f4?w=400"
-                    alt="Yellow planet"
-                    data-ai-hint="yellow planet"
-                    width={100}
-                    height={100}
-                    className="object-contain rounded-full border-4 border-[#a2d8f5]"
-                   />
-              </div>
-               <div className="absolute right-10 top-10">
-                  <Image
-                    src="https://images.unsplash.com/photo-1567409385055-6cb53b34e2f4?w=400"
-                    alt="Orange planet"
-                    data-ai-hint="orange planet"
-                    width={120}
-                    height={120}
-                    className="object-contain rounded-full border-4 border-[#a2d8f5]"
-                   />
-              </div>
-               <div className="absolute right-40 top-0">
-                  <Image
-                    src="https://images.unsplash.com/photo-1567409385055-6cb53b34e2f4?w=400"
-                    alt="Small planet"
-                    data-ai-hint="small planet"
-                    width={40}
-                    height={40}
-                    className="object-contain rounded-full border-2 border-[#a2d8f5]"
-                   />
-              </div>
+              {/* Images removed as per request */}
             </div>
           </div>
         </div>

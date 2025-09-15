@@ -1,6 +1,7 @@
 import { Header } from '@/components/pop-replica/Header';
 import { HeroSection } from '@/components/pop-replica/HeroSection';
 import { EvolvingSection } from '@/components/pop-replica/EvolvingSection';
+import { FeatureShowcase } from '@/components/pop-replica/FeatureShowcase';
 import { Footer } from '@/components/pop-replica/Footer';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <EvolvingSection />
+        <FeatureShowcase />
       </main>
       <Footer />
     </div>

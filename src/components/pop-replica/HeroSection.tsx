@@ -36,26 +36,7 @@ export function HeroSection() {
               </div>
             </div>
             <div className="relative h-64 md:h-96 flex items-center justify-center">
-              <div className="absolute -left-20 top-0">
-                <Image
-                    src="/yellow-planet.png"
-                    alt="Yellow planet"
-                    data-ai-hint="yellow planet"
-                    width={100}
-                    height={100}
-                    className="object-contain rounded-full border-4 border-[#a2d8f5]"
-                />
-              </div>
-              <div className="absolute right-10 top-10">
-                  <Image
-                      src="/orange-planet.png"
-                      alt="Orange planet"
-                      data-ai-hint="orange planet"
-                      width={120}
-                      height={120}
-                      className="object-contain rounded-full border-4 border-[#a2d8f5]"
-                  />
-              </div>
+              {/* Images removed as per user request */}
             </div>
           </div>
         </div>
